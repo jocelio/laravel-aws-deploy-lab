@@ -1,0 +1,2 @@
+GET http://laravel-aws-deploy-lab-alb-54925436.sa-east-1.elb.amazonaws.com/
+GET http://laravel-aws-deploy-lab-alb-54925436.sa-east-1.elb.amazonaws.com/stress

@@ -11,4 +11,14 @@ Route::get('/', function () {
     ]);
  });
 
+ Route::get('/stress', function () {
+    $start = microtime(true);
+
+    while (microtime(true) - $start < 0.2) {
+        hash('sha256', random_bytes(32));
+    }
+
+    return 'ok';
+});
+
  Route::get('/health', fn() => response()->json(['ok' => true]));
